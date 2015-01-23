@@ -1,0 +1,22 @@
+{
+  "name": "HampshireWeb",
+  "version": "0.0.1",
+  "description": "...",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:encorelab/hampshire-web.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-sass": "~0.7.0",
+    "grunt-jsonlint": "^1.0.4"
+  },
+  "author": "ENCORE Lab",
+  "license": "MIT"
+}

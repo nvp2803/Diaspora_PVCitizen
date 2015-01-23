@@ -1,0 +1,26 @@
+// ********** components **********
+a:hover {
+	text-decoration: none;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+	border: none;
+	color: rgba(0, 0, 0, 0);
+}
+
+.btn {
+	@include button(dodgerblue);
+	padding: 10px 25px;
+}
+
+.thumbnail {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	box-shadow: none;
+}
+
+.container-fluid {
+	padding: 25px;
+}

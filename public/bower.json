@@ -1,0 +1,21 @@
+{
+  "name": "hampshire-web",
+  "version": "0.2.0",
+  "homepage": "https://github.com/encorelab/hampshire-web",
+  "authors": [
+    "megseoh <ohara.meagan@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.1"
+  }
+}

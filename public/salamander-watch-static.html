@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pioneer Valley Citizen Science Collaboratory - Leaf Drop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+
+	<link href="../css/styles.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body class="projects" id="salamander-watch">
+
+	<header class="container-fluid"></header>
+	<div class="container-fluid">
+		<h2>Salamander Watch</h2>
+		<div class="row">
+			<section class="col-xs-12 col-sm-8">
+				<h3>Project Overview</h3>
+				<p>Salamander Watch is a collaboration between Hampshire College and The Hitchcock Center for the Environment in Amherst, MA. This project involves both the “Big Night” (counting of spotted salamanders during the early spring mating migration) and the Egg Mass Count (which happens 3-4 weeks after the Big Night, and is used to get a better estimate of the breeding success and overall health of the population).</p>
+				<h3 class="subsequent-heading">Spotted Salamander Basics</h3>
+				<p>Adult spotted salamanders are 15-25 cm in total length, and females tend to be larger than males. Compared to other salamanders, the body is stout with a broadly rounded snout. The sides of the head are often swollen at the back of the jaw. The legs are large and strong with four to five toes. (Petranka, 1998) When they leave their ponds, spotted salamanders are black, dark brown, or dark grey on their backs...</p>
+				<!-- <a class="btn btn-primary" href="http://en.wikipedia.org/wiki/Spotted_salamander" target="_blank">Read More</a> -->
+			</section>
+			<aside class="col-xs-12 col-sm-4">
+				<h3>Salamander Watch Expeditions</h3>
+				<!-- <p>Odd Future Godard fashion axe scenester. 90's, art party Austin sartorial, letterpress artisan Blue Bottle paleo Thundercats YOLO flannel vegan church-key direct trade chillwave. Literally cornhole pork belly, synth Thundercats fingerstache try-hard VHS McSweeney's. XOXO wolf literally slow-carb church-key deep.</p> -->
+				<!-- <a class="btn btn-primary" href="">No Current Expeditions</a> -->
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<a class="thumbnail" href="#">
+							<img alt="Launch an investigation" class="img-responsive" src="/images/launch_investigation.png"/>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<a class="thumbnail" href="#">
+							<img alt="Launch an investigation" class="img-responsive" src="/images/explore_data.png"/>
+						</a>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+
+	<!-- environmental issues -->
+	<section class="container-fluid" id="environment">
+		<h3>Environmental Issues Affecting Salamanders</h3>
+		<div class="row issues">
+			<div class="col-xs-8 col-sm-2 col-sm-offset-2">
+				<a class="thumbnail" data-target="#biodiversity-icon" data-toggle="modal" href="#">
+					<img alt="Biodiversity Icon" class="img-responsive" src="/images/issue_biodiversity.png"/>
+					<h3 class="caption text-center">Biodiversity</h3>
+				</a>
+			</div>
+			<div class="col-xs-8 col-sm-2">
+				<a class="thumbnail" data-target="#climate-change-icon" data-toggle="modal" href="#">
+					<img alt="Climate Change Icon" class="img-responsive" src="/images/issue_climatechange.png"/>
+					<h3 class="caption text-center">Climate Change</h3>
+				</a>
+			</div>
+			<div class="col-xs-8 col-sm-2">
+				<a class="thumbnail" data-target="#invasive-species-icon" data-toggle="modal" href="#">
+					<img alt="Invasive Species Icon" class="img-responsive" src="/images/issue_invasivespecies.png"/>
+					<h3 class="caption text-center">Invasive Species</h3>
+				</a>
+			</div>
+			<div class="col-xs-8 col-sm-2">
+				<a class="thumbnail" data-target="#habitat-loss-icon" data-toggle="modal" href="#">
+					<img alt="Habitat Loss Icon" class="img-responsive" src="/images/issue_habitatloss.png"/>
+					<h3 class="caption text-center">Habitat Loss</h3>
+				</a>
+			</div>
+		</div>
+
+		<!-- Modals -->
+		<!-- Biodiversity -->
+		<div aria-hidden="true" aria-labelledby="biodiversity-icon" class="modal fade" id="biodiversity-icon" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+						<h4 class="modal-title" id="biodiversity-title">Biodiversity</h4>
+					</div>
+					<div class="modal-body row">
+						<div class="col-xs-12 col-sm-4">
+							<div class="thumbnail">
+								<img alt="Biodiversity Icon" src="/images/modal_biodiversity.png"/>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<p>The decline in amphibian populations has been both well-documented and well publicized. However, this attention is largely focused on frogs and toads. Little mention is given to salamanders or the threats that they face. This is unfortunate as the decline in salamander species is extremely significant. Around half of all the world’s salamander species are listed as Threatened by the International Union for Conservation of Nature (IUCN).</p>
+							<p>These species are all facing a high risk of extinction.</p>
+							<p>A further 62 species have been designated as Near-Threatened with populations that are dwindling. This means they are quickly getting closer to Threatened Status and to the brink of extinction.</p>
+							<p>Sadly for some salamanders it is already too late, as both the Yunnan Lake Newt (Cynops wolterstorffi) and Ainsworth's Salamander (Plethodon ainsworthi) have already gone extinct; completely exterminated by the callous hands of humans.</p>
+							<p>Salamanders have been on the earth for over 160 million years, and the terrible state that they now find themselves in is due to the detrimental acts of humans.  Even those species that are not experiencing population declines deserve attention and conservation to ensure that they remain healthy and stable.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Climate Change -->
+		<div aria-hidden="true" aria-labelledby="climate-change-icon" class="modal fade" id="climate-change-icon" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+						<h4 class="modal-title" id="climate-change-title">Climate Change</h4>
+					</div>
+					<div class="modal-body row">
+						<div class="col-xs-12 col-sm-4">
+							<div class="thumbnail">
+								<img alt="Climate Change Icon" src="/images/modal_climate.png"/>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<p>Climate change is among the most serious threats that salamander populations face. Detrimental changes in climate such as increased temperatures, changing humidity levels, desertification, and droughts wreak havoc on salamanders. These animals are generally adapted to moist and cool climates and may require very specific conditions to thrive. Salamanders also live a "double-life" being associated with both aquatic and terrestrial habitats.</p>
+							<p>Alterations to these optimal conditions result in salamander species dwindling. Changes in climate can also effect the forming and availability of critical habitat features such as change. They state that salamanders need cool moist places to survive. The world is getting hotter and drier; temperatures in Appalachia are predicted to rise by 3 to 11 degrees Fahrenheit over the next century. Salamanders have relatively long lifespans, but they do not mature or reproduce as quickly as some other aquatic animals. They may not be able to adapt to such radical change.</p>
+							<p>Biologists from the University of California, Berkeley, have reported that salamander populations in parts of Central America have declined sharply in the past 40 years and global warming could be the cause.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Invasive Species -->
+		<div aria-hidden="true" aria-labelledby="invasive-species-icon" class="modal fade" id="invasive-species-icon" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+						<h4 class="modal-title" id="invasive-title">Invasive Species</h4>
+					</div>
+					<div class="modal-body row">
+						<div class="col-xs-12 col-sm-4">
+							<div class="thumbnail">
+								<img alt="Invasive Species Icon" src="/images/modal_invasive.png"/>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<p>In contrast to the positive effect that round gobies have had on Lake Erie watersnakes, invasive species more typically have negative effects on native species. This is certainly true for European buckthorn, an invasive woody shrub that now occurs across a large portion of eastern North America and has displaced native plants, changed soil characteristics and patterns of nutrient cycling, and may be triggering declines of a variety of invertebrate and vertebrate species. European buckthorn is especially successful at invading flatwoods forest habitats.</p>
+							<p>Such forests are underlain by a clay pan that resists water percolation, and are characterized by hydric soils and ephemeral ponds that are important amphibian breeding sites. The rarity of flatwoods forests has resulted in their recognition as globally imperiled and has made them the target of management and restoration efforts.</p>
+							<p>One such effort is that of the Lake County Forest Preserve District in northeastern Illinois to restore the MacArthur Woods flatwoods forest through European buckthorn removal and drainage tile disablement. Following these restoration efforts, the District approached Dr. Carl von Ende and me with an offer to fund a PhD dissertation project aimed at assessing the feasibility of reintroducing three species of amphibians that had been extirpated from the site, spotted salamanders, woodfrogs, and spring peepers. A national search resulted in our hiring Allison Sacerdote to undertake this project. Allison conducted a series of in situ photo of Leaf Litter Methodenclosure experiments that demonstrated similar hatching success and survival to metamorphosis between restored ponds and source ponds in a neighboring county, suggesting that reintroduction should be possible.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Habitat Loss -->
+		<div aria-hidden="true" aria-labelledby="habitat-loss-icon" class="modal fade" id="habitat-loss-icon" role="dialog" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+						<h4 class="modal-title" id="habitat-loss-title">Habitat Loss</h4>
+					</div>
+					<div class="modal-body row">
+						<div class="col-xs-12 col-sm-4">
+							<div class="thumbnail">
+								<img alt="Habitat Loss Icon" src="/images/modal_habitat.png"/>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-8">
+							<p>One of the biggest issues affecting salamanders is the loss of their natural habitat. Many areas that were once suitable for salamanders to live have now been destroyed for developmental construction and agriculture. Habitats of all kinds are being lost at an alarming rate. Wetlands are drained, forests are logged and cut down, and waterfronts are developed. Salamanders are literally losing their homes and they are losing them rapidly! Deforestation is particularly harmful to salamanders. When the amount of shade that covers the forest floor is reduced due to the removal of trees, the increased sunlight can allow for higher temperatures to reach the forest floor.</p>
+							<p>This increases the threat of desiccation. The exposed sunlight can also rapidly dry up vernal pools and temporary flooded areas on the forest floor which are crucial breeding/birthing sites. The expansion of urban areas threatens the suitable habitats that still remain.</p>
+							<p>Where natural habitats do still exist, they are often fragmented or degraded. Fragmentation occurs when healthy areas of habitat are isolated from one another. These fragmented areas are known as habitat islands. Salamander populations are affected since gene flow between the populations is prevented. This increases the occurrence of inbreeding, which results in a decrease in genetic variability. Fragmented populations where inbreeding occurs often ends in a genetic bottleneck this is an evolutionary event where a significant percentage of the populartion or species is killed otherwise prevented from reproducing.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="btn btn-primary btn-back" href="index.html#projects"><span></span>Back to Projects</a>
+	</section>
+
+</body>
+</html>

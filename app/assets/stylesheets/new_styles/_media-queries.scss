@@ -1,0 +1,80 @@
+/********** MEDIA QUERIES **********/
+/* Extra small devices landscape (phones, less than 768px) */
+@media handheld and (max-width: 767px) and (orientation: landscape) {
+
+    #login {
+        background: red;
+        padding: 50px 0;
+        .col-sm-5 {
+            padding-right: 75px;
+        }
+        .col-sm-5:nth-child(2) {
+            border-left: 1px solid $black;
+            padding-left: 75px;
+        }
+        h2.users {
+            text-align: right;
+        }
+        button {
+            float: right;
+        }
+        input {
+            width: 75%;
+        }
+    }
+
+}
+
+/* Small devices portrait (tablets, 768px and up) */
+@media all and (min-width: 768px) and (orientation: portrait) {
+
+    #login {
+        background: red;
+        padding: 50px 0;
+        .col-sm-5 {
+            padding-right: 75px;
+        }
+        .col-sm-5:nth-child(2) {
+            border-left: 1px solid $black;
+            padding-left: 75px;
+        }
+        h2.users {
+            text-align: right;
+        }
+        button {
+            float: right;
+        }
+        input {
+            width: 75%;
+        }
+    }
+
+
+}
+
+/* Small devices landscape(tablets, 768px and up) */
+@media all and (min-width: 768px) and (orientation: landscape) {
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media all and (min-width: 992px) {
+
+    .nav-pills {
+        padding: 0;
+        &> li,
+        &> li + li {
+            margin-right: 20px;
+            display: inline-block;
+        }
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media all and (min-width: 1200px) {
+
+
+
+}

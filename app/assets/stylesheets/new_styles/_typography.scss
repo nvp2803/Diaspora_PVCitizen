@@ -1,0 +1,33 @@
+// ********** typography **********
+body {
+	font-family: $font-family--primary;
+	font-weight: $font-weight--light;
+}
+
+h1 > a,
+.nav-pills > li > a,
+#environment h2,
+#environment h3,
+#about h2,
+#about p,
+.panel-title > a,
+.panel-body {
+	color: $white;
+	font-weight: $font-weight--light;
+}
+
+h2 {
+	margin: 25px 0;
+	font-size: 3em;
+	font-weight: $font-weight--light;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: $font-weight--light;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.6em;
+}

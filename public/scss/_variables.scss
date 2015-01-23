@@ -1,0 +1,38 @@
+// ********** colours **********
+$white					: #fff;
+$black					: #0b0b0b;
+$darkslategray			: #382d5d;
+$lightslategray			: #778899;
+$dodgerblue				: #2998db;
+$peruorange				: #ed8930;
+$goldenrod				: #e0a903;
+
+// ********** typography **********
+$font-url--google		: 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
+$font-family--primary	: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-weight--light		: 300;
+$font-weight--medium	: 400;
+$font-weight--bold		: 700;
+
+%transition	{
+	transition: all 0.4s ease-in-out;
+}
+
+@mixin button($colour) {
+	font-size: 1.2em;
+	background-color: $colour;
+	border: 2px solid $colour;
+	border-radius: 4px;
+	padding: 10px 25px;
+	background-image: none;
+	box-shadow: none;
+	@extend %transition;
+	&:hover {
+		cursor: pointer;
+		background-color: $white;
+		color: $colour;
+		border-color: $colour;
+		@extend %transition;
+	}
+}

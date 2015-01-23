@@ -1,0 +1,26 @@
+@mixin projects_page($project, $colour) {
+	header {
+		background: url('../images/header_#{$project}.jpg') no-repeat;
+	}
+	aside {
+		background: $colour;
+	}
+}
+
+#leaf-drop {
+	@include projects_page(leafdrop, $peruorange);
+}
+
+.projects {
+	header {
+		width: 100%;
+		height: 200px;
+		background-size: 100%;
+	}
+	h3 {
+		margin: 0 0 20px;
+	}
+	p:last-child {
+		margin-bottom: 20px;
+	}
+}
