@@ -1,5 +1,4 @@
 1- Update:
-
 sudo apt-get update
 sudo apt-get install build-essential curl git imagemagick libmagickwand-dev nodejs redis-server libcurl4-openssl-dev libxml2-dev libxslt-dev libpq-dev libmagickwand-dev
 
