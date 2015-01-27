@@ -41,3 +41,4 @@ bundle exec rake db:create db:schema:load
 **Your server now is running in localhost:3000. You can change the port easily.
 
 
+Armin has commit access :)
