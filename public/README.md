@@ -11,6 +11,14 @@
 ```
 =============
 
+Setup instructions
+- git clone git@github.com:encorelab/hampshire-web.git
+- npm install
+- bower install
+- http-server to run locally
+
+=============
+
 # The MIT License (MIT)
 
 Copyright (c) 2014 Encore Lab Toronto @ University of Toronto

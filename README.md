@@ -1,44 +1,37 @@
-1- Update:
-sudo apt-get update
-sudo apt-get install build-essential curl git imagemagick libmagickwand-dev nodejs redis-server libcurl4-openssl-dev libxml2-dev libxslt-dev libpq-dev libmagickwand-dev
+# diaspora* 
+### a privacy aware, distributed, open source social network
 
-sudo apt-get install python-software-properties
-sudo apt-add-repository ppa:jaywink/curldebian
-sudo apt-get update && sudo apt-get dist-upgrade
+**master:** [![Build Status master](https://secure.travis-ci.org/diaspora/diaspora.png?branch=master)](http://travis-ci.org/diaspora/diaspora)
+**develop:** [![Build Status develop](https://secure.travis-ci.org/diaspora/diaspora.png?branch=develop)](http://travis-ci.org/diaspora/diaspora) |
+[![Dependency Status](https://gemnasium.com/diaspora/diaspora.png?travis)](https://gemnasium.com/diaspora/diaspora)
+[![Code Climate](https://codeclimate.com/github/diaspora/diaspora.png)](https://codeclimate.com/github/diaspora/diaspora)
 
-sudo apt-add-repository ppa:chris-lea/redis-server
-sudo apt-get update && sudo apt-get dist-upgrade
+[Project site](https://diasporafoundation.org) |
+[Wiki](https://wiki.diasporafoundation.org) |
+[Bugtracker](http://github.com/diaspora/diaspora/issues) |
+[Discussions](https://www.loomio.org/groups/194) |
+[Mailing lists](https://wiki.diasporafoundation.org/How_We_Communicate#Mailing_Lists) |
+[License](/COPYRIGHT) |
+[Authors](https://github.com/diaspora/diaspora/contributors)
 
-2- Install your database: https://help.ubuntu.com/12.04/serverguide/postgresql.html
-
-3 - Install RVM
-curl -L dspr.tk/1t | bash
-
-4 - Setting your RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-rvm install 2.0
-
-5 - Dowload code
-cd ~
-git clone  https://github.com/nvp2803/Diaspora_PVCitizen.git
-cd Diaspora_PVCitizen
-
-6 - Configuring Database
-cp config/database.yml.example config/database.yml
-cp config/diaspora.yml.example config/diaspora.yml
-
-7 - Bundle
-DB=postgres  bundle install
-
-8 - Set up database
-bundle exec rake db:create db:schema:load
-
-9 - Run diaspora:
-./script/server
+## Installation
 
 
+You don't have to install diaspora* to use the network. There are many servers connected to diaspora*s network which are open to anyone, and you can create an account on one of these servers. Have a look at our [tips for finding a home](https://wiki.diasporafoundation.org/Choosing_a_pod), or you can just go straight to the [list of open servers](http://podupti.me) to sign up.
 
-**Your server now is running in localhost:3000. You can change the port easily.
+Want to own your data and install diaspora*? Whether you just want to try it out, want to install it on your server or want to contribute and need a development setup, our [installation guides](https://wiki.diasporafoundation.org/Installation) will get you started!
 
+## Questions?
 
-Armin has commit access :)
+Have a look at our FAQs [for users](https://wiki.diasporafoundation.org/FAQ_for_users), [for pod administrators](https://wiki.diasporafoundation.org/FAQ_for_pod_maintainers) or [for developers](https://wiki.diasporafoundation.org/FAQ_for_developers).
+
+Still haven't found an answer? Talk to us! Read [how we communicate](https://wiki.diasporafoundation.org/How_we_communicate). We're here to answer all your questions.
+
+## Contribute
+
+To keep diaspora*  growing and improving we need all help we can get. Whether you can contribute [code](https://wiki.diasporafoundation.org/Getting_started_with_contributing), [ideas](https://wiki.diasporafoundation.org/How_we_communicate#Loomio), [translations](https://wiki.diasporafoundation.org/Contribute_translations), [bug reports](https://wiki.diasporafoundation.org/How_to_report_a_bug) or simply extend the community as a [helpful user](https://wiki.diasporafoundation.org/Welcoming_committee) or [pod administrator](https://wiki.diasporafoundation.org/Installation), your help is welcome!
+
+## Security
+
+Found a security issue? Please disclose it responsibly. We have a team of developers listening to [security@diasporafoundation.org](mailto:security@diasporafoundation.org). The PGP fingerprint is [AB0D AB02 0FC5 D398 03AB 3CE1 6F70 243F 27AD 886A](http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x6F70243F27AD886A)
+

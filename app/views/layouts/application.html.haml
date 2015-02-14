@@ -4,6 +4,7 @@
 
 !!!
 %html{:lang => I18n.locale.to_s, :dir => (rtl?) ? 'rtl' : 'ltr'}
+
   %head{:prefix => "pvcitizenscience"}
     %title pvcitizenscience.org
       
@@ -13,7 +14,6 @@
     %meta{:name => "Pvcitizenscience", :content => "pvcitizenscience"}/
     %meta{:name => "PvcitizensciencePvcitizenscience", :content => "Pvcitizenscience Research"}/
 
-    %link{:rel => 'shortcut icon', :href => "#{image_path('favicon.png')}" }
     %link{:rel => 'apple-touch-icon', :href => "#{image_path('apple-touch-icon.png')}"}
 
     = render 'layouts/open_graph'

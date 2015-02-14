@@ -1,3 +1,16 @@
+nav {
+  background: rgb(51, 51, 51);
+  height: 50px;
+}
+nav li {
+  padding: 5px;
+  display: inline-block !important;
+}
+nav a {
+  color: white;
+}
+
+
 .btn, .btn:hover, .projects .btn-back, .projects .btn-back:hover, .nav-pills > li > a, .nav-pills > li + li > a, .nav-pills > li > a:hover, .nav-pills > li + li > a:hover, #about .join-now,
 #about-team .join-now, #about .join-now:hover,
 #about-team .join-now:hover, #about-team p > a,
