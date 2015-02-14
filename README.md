@@ -6,8 +6,6 @@ sudo apt-get install build-essential curl git imagemagick libmagickwand-dev node
 sudo apt-get install python-software-properties
 sudo apt-add-repository ppa:jaywink/curldebian
 sudo apt-get update && sudo apt-get dist-upgrade
-
-## Installation
 sudo apt-add-repository ppa:chris-lea/redis-server
 sudo apt-get update && sudo apt-get dist-upgrade
 
