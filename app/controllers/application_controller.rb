@@ -160,4 +160,8 @@ class ApplicationController < ActionController::Base
       gon.bootstrap = true
     }, only: routes.flatten
   end
+  def staticpage
+    
+  end
+
 end

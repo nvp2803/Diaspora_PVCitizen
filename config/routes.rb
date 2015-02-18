@@ -7,6 +7,10 @@ require 'sidetiq/web'
 
 Diaspora::Application.routes.draw do
 
+  get 'application/staticpage'
+ 
+  get '/tags/tosalamander'
+
   get 'external_data/pulldata'
 
   get 'external_data/pushdata'

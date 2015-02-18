@@ -67,4 +67,7 @@ class TagsController < ApplicationController
     @tags << { :name  => ('#' + params[:q]) }
     @tags.uniq!
   end
+  def tosalamander
+    
+  end
 end

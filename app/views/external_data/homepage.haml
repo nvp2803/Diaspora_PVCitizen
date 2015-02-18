@@ -1,0 +1,188 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}
+      %title Pioneer Valley Citizen Science Collaboratory
+      %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+        %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+        %link{:href => "../bower_components/bootstrap/dist/css/bootstrap.min.css", :rel => "stylesheet"}
+          %link{:href => "../bower_components/bootstrap/dist/css/bootstrap-theme.min.css", :rel => "stylesheet"}
+            %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300", :rel => "stylesheet", :type => "text/css"}
+              %link{:href => "../css/styles.css", :rel => "stylesheet"}
+                %link{:href => "/images/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
+                  %link{:href => "/images/favicon.ico", :rel => "icon", :type => "image/x-icon"}
+                    %script{:src => "../bower_components/jquery/dist/jquery.min.js", :type => "text/javascript"}
+                    %script{:src => "../bower_components/bootstrap/dist/js/bootstrap.min.js", :type => "text/javascript"}
+                    %script{:src => "js/app.js", :type => "text/javascript"}
+  %body
+    %section#environment.container-fluid
+      %h2 Environmental Issues in the Pioneer Valley
+      .row.issues
+        .col-xs-8.col-xs-offset-2.col-sm-2.col-sm-offset-2
+          %a.thumbnail{"data-target" => "#biodiversity-icon", "data-toggle" => "modal", :href => "#"}
+            %img.img-responsive{:alt => "Biodiversity Icon", :src => "/images/issue_biodiversity.png"}/
+            %h3.caption.text-center Biodiversity
+        .col-xs-8.col-xs-offset-2.col-sm-2
+          %a.thumbnail{"data-target" => "#climate-change-icon", "data-toggle" => "modal", :href => "#"}
+            %img.img-responsive{:alt => "Climate Change Icon", :src => "/images/issue_climatechange.png"}/
+            %h3.caption.text-center Climate Change
+        .col-xs-8.col-xs-offset-2.col-sm-2
+          %a.thumbnail{"data-target" => "#invasive-species-icon", "data-toggle" => "modal", :href => "#"}
+            %img.img-responsive{:alt => "Invasive Species Icon", :src => "/images/issue_invasivespecies.png"}/
+            %h3.caption.text-center Invasive Species
+        .col-xs-8.col-xs-offset-2.col-sm-2
+          %a.thumbnail{"data-target" => "#habitat-loss-icon", "data-toggle" => "modal", :href => "#"}
+            %img.img-responsive{:alt => "Habitat Loss Icon", :src => "/images/issue_habitatloss.png"}/
+            %h3.caption.text-center Habitat Loss
+    / Modals
+    / Biodiversity
+    #biodiversity-icon.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "biodiversity-icon", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+            %h4#biodiversity-title.modal-title Biodiversity
+          .modal-body.row
+            .col-xs-12.col-sm-4
+              .thumbnail
+                %img{:alt => "Biodiversity Icon", :src => "/images/modal_biodiversity.png"}/
+            .col-md-8
+              %p Biodiversity is the issue that ties the rest of the environmental issues listed here together. It is, broadly defined, the huge and almost incomprehensible variety of different species that inhabit the world. Biodiversity is being threatened, though, by human activity&mdash;from habitat loss, from climate change, and from introduction of invasive species. And when we lose genetic diversity in the world, we're not only losing species that don't affect us&mdash;we're losing valuable natural resources that sustain us, as well, including food sources, origins for medical drugs, and bases for jobs and livelihoods.
+              %p
+                Click
+                %a{:href => "http://www.mass.gov/eea/agencies/dfg/dfw/natural-heritage/species-information-and-conservation/mesa-list/list-of-rare-species-in-massachusetts.html", :target => "_blank"} here
+                for a list of endangered, threatened, and other special conservation interest species in Massachusetts.
+    / Climate Change
+    #climate-change-icon.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "climate-change-icon", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+            %h4#climate-change-title.modal-title Climate Change
+          .modal-body.row
+            .col-xs-12.col-sm-4
+              .thumbnail
+                %img{:alt => "Climate Change Icon", :src => "/images/modal_climate.png"}/
+            .col-md-8
+              %p
+                Climate change is a global problem, but it is already starting to have tangible and direct effects on the Pioneer Valley. Among the projected effects of climate change are more frequent severe weather events, three of which occurred in 2011 alone: a series of tornados in the Springfield area on June 1
+                %sup> st
+                , flooding from Tropical Storm Irene on August 28-29
+                %sup> th
+                , and an early snowstorm on October 30
+                %sup> th
+                \.&nbsp;A record-breaking heat wave also swept across the entire United States in July 2012.
+              %p In addition to an average temperature increase of 3-5 degrees F by 2050 at current greenhouse gas emission levels, it is expected that by the end of the century there will be anywhere from 30 to 60 days of extreme heat (over 90 degrees) in comparison with the 5 to 20 at current levels. Precipitation levels will also fluctuate much more extremely&mdash;while there are expected to be instances of extreme flooding once every 2-3 years, and a general increase in precipitation during winter months, Massachusetts will also have a 75% increase in drought events which will last from 1-3 months.
+              %p All of these changes raise significant risks to other environmental factors. Temperature increases alone may force wildlife to migrate to the cooler places that they are better suited to survive, but increased flooding events may destroy habitats entirely. Flooding is particularly dangerous due to sewage disposal infrastructure's demonstrated vulnerabilities; during Tropical Storm Irene, raw sewage was discharged to the Connecticut River for several days when flood waters knocked the Greenfield wastewater facility offline.
+    / Invasive Species
+    #invasive-species-icon.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "invasive-species-icon", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+            %h4#invasive-title.modal-title Invasive Species
+          .modal-body.row
+            .col-xs-12.col-sm-4
+              .thumbnail
+                %img{:alt => "Invasive Species Icon", :src => "/images/modal_invasive.png"}/
+            .col-md-8
+              %p Invasive species represent a significant threat to local wildlife, displacing and leading to habitat loss for native flora and fauna. In extreme cases, they can even change characteristics of the ecosystem itself. Native species are usually introduced unintentionally by human activity, managing to survive in transit from their original native environment. After they establish themselves in the new environment, there is often a lag period before they begin to reproduce and spread more rapidly.
+              %p There are a wide variety of invasive species which have had an impact on the Pioneer Valley.  One of the most notorious among them, the gypsy moth, was introduced to Massachusetts in the 1860s, and since then has spread through the northeastern United States.  Gypsy moth caterpillars defoliate oaks and other hardwood trees, causing extensive damage or even killing their host trees.
+    / Habitat Loss
+    #habitat-loss-icon.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "habitat-loss-icon", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+            %h4#habitat-loss-title.modal-title Habitat Loss
+          .modal-body.row
+            .col-xs-12.col-sm-4
+              .thumbnail
+                %img{:alt => "Habitat Loss Icon", :src => "/images/modal_habitat.png"}/
+            .col-xs-12.col-sm-8
+              %p
+                Habitat loss is a major threat to biodiversity both in the Pioneer Valley and the wider world. Human activity is usually the cause of habitat loss, either directly through agriculture, land and water development, or indirectly through climate change
+                %span.text-danger (link to the climate change page)
+                or introduction of invasive species
+                = succeed "." do
+                  %span.text-danger (link to the invasive species page)
+              %p
+                The Connecticut River flows through the Pioneer Valley, and is home to a variety of aquatic species. However, human infrastructure in the form of dams and culverts has changed the natural flow regime and chemistry of the river, which has concerning implications for its ecology. There are 1,422 dams in MA and CT alone, which averages 1 dam per 6.6 km of river, in addition to 2,885 culverts in the Valley. The alterations to the river's flow regime restrict access to quality habitat for one or more life stages of various species, such as the ability for
+                %span{:title => "fish which spend most of their life in seawater, but lay their eggs in freshwater"}> anadromous fish
+                to reach preferred freshwater spawning habitats from the sea, as well as blocking access to thermal refuges for brook trout populations. In addition, pollution and wastewater runoff from flooding and stormwaters in urban areas also contribute to making the Connecticut River unsuitable for habitation.
+              %p
+                Urban sprawl represents another threat to habitat loss, as natural environments are replaced with man-made buildings and roads. Neighborhood Nestwatch seeks to learn more about how habitat loss in the form of increasing urban sprawl impacts bird nesting habits. To learn more, click
+                %a{:href => "http://pvcitizenscience.org/projects/salamander-watch/"} here
+                to get involved in Neighborhood Nestwatch.
+              %p
+                To learn more about how habitat loss affects salamanders, click
+                %a{:href => "http://pvcitizenscience.org/projects/salamander-watch/"} here
+                to get involved in Salamander Watch.
+    / Citizen Science Projects
+    %section#projects.container-fluid
+      %h2 Citizen Science Projects
+      .row
+        .col-xs-12.col-sm-4.top-buffer
+          .thumbnail
+            %img.img-responsive{:alt => "Leaves on a branch", :src => "/images/icon_leafdrop.png"}/
+          %h3 Leaf Drop
+          %p The Leaf Drop project, adapted from an existing Forest Schoolyard Ecology Buds, Leaves, and Global Warming project, takes place in the Fall. In this multi week project Citizen Scientists record the changes in leaf color of trees to gain an understanding of the end of growing season in their local context.
+          %a.btn.btn-primary{:href => "/leaf-drop-static.html", :role => "button"} Learn More
+          %a.btn.btn-primary{:href => "#", :role => "button"} Launch App
+        .col-xs-12.col-sm-4.top-buffer
+          .thumbnail
+            %img.img-responsive{:alt => "Image of buds on a tree", :src => "/images/icon_budburst.png"}/
+          %h3 Bud Burst
+          %p The Bud Burst project is a national citizen science project that seeks to learn more about how plants respond to changes in climate locally, regionally, and nationally. Participants report on appearances of plants, either tracking the progress of a single plant over the course of a year or once.
+          %a.btn.btn-primary{:href => "/bud-burst-static.html", :role => "button"} Learn More
+          %a.btn.btn-primary{:href => "#", :role => "button"} Launch App
+        .col-xs-12.col-sm-4.top-buffer
+          .thumbnail
+            %img.img-responsive{:alt => "Spotted salamander", :src => "/images/icon_salamanderwatch.png"}/
+          %h3 Salamander Watch
+          %p Salamander Watch is a collaboration between Hampshire College and The Hitchcock Center for the Environment in Amherst, MA. This project involves both the “Big Night”, a counting of spotted salamanders during the early spring mating migration, and the Egg Mass Count, which is used to get a better estimate of the breeding success and overall health of the population.
+          %a.btn.btn-primary{:href => "/salamander-watch-static.html", :role => "button"} Learn More
+          %a.btn.btn-primary{:href => "#", :role => "button"} Launch App
+      .row.top-buffer
+        .col-xs-12.col-sm-4.top-buffer
+          .thumbnail
+            %img.img-responsive{:alt => "Nest containing three eggs", :src => "/images/icon_nestwatch.png"}/
+          %h3 Neighborhood Nestwatch
+          %p Modeled after a Smithsonian project in the Washington, D.C. area, Neighborhood Nestwatch engages citizen scientists from Western Massachusetts in gathering data to discover how urban sprawl impacts songbird populations. Assisted by scientists, participants learn how to locate nests in their backyards and count the eggs or recently-hatched birds within. In addition, the experts apply bands to adult birds so that the citizen scientists can track the birds' year-to-year returns to their nesting sites.
+          %a.btn.btn-primary{:href => "/neighbourhood-nestwatch-static.html", :role => "button"} Learn More
+          %a.btn.btn-primary{:href => "#", :role => "button"} Launch App
+        .col-xs-12.col-sm-4.top-buffer
+          .thumbnail
+            %img.img-responsive{:alt => "A firefly in a hand", :src => "/images/icon_firefly.png"}/
+          %h3 Firefly Watch
+          %p The Boston Museum of Science's Firefly Watch project seeks to learn more about the geographic distribution and activities of fireflies during the summer. It also seeks to discover more about the effects of man-made light and pesticides on fireflies. Participants go out into their backyards or nearby fields one night a week and fill out an observation sheet with information on the weather conditions that night and the behavior of the fireflies that they see.
+          %a.btn.btn-primary{:href => "/firefly-watch-static.html", :role => "button"} Learn More
+          %a.btn.btn-primary{:href => "#", :role => "button"} Launch App
+        .col-xs-12.col-sm-4.top-buffer
+          .thumbnail
+            %img.img-responsive{:alt => "A monarch butterfly", :src => "/images/icon_monarch.png"}/
+          %h3 Monarch Butterflies
+          %p Monarch Butterflies Watch project engages citizen scientists in collecting data on Monarch butterflies in the Fall as they migrate to Mexico.  Future iterations of this project may involve tracking Monarch's migration from Mexico..
+          %a.btn.btn-primary{:href => "/monarch-butterflies-static.html", :role => "button"} Learn More
+          %a.btn.btn-primary{:href => "#", :role => "button"} Launch App
+    
+    %footer
+      %img.nsf-logo.pull-left{:alt => "NSF Logo", :src => "images/nsf1.jpg"}
+        %p.pull-left.col-xs-8.col-sm-6 This project is supported by a grant from the National Science Foundation
+        %a.btn.btn-primary.btn-top.pull-right{:href => "#top"}
+          %span>
+          Return To Top
+
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+/ col-xs-2 col-sm-6

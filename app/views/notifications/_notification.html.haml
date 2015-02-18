@@ -1,4 +1,5 @@
 .media.stream_element{:data=>{:guid => note.id, :type => (Notification.types.key(note.type) || '') }, :class => (note.unread ? 'unread' : 'read')}
+.media.stream_element{:data=>{:guid => note.id, :type => (Notification.types.key(note.type) || '') }, :class => (note.unread ? 'unread' : 'read')}
   .unread-toggle.pull-right
     %i.entypo.eye{ :title => (note.unread ? t('notifications.index.mark_read') : t('notifications.index.mark_unread')) }
   - if note.type == "Notifications::StartedSharing" && contact = current_user.contact_for(note.effective_target)

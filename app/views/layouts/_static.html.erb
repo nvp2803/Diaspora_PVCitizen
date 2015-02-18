@@ -1,0 +1,480 @@
+<head>
+
+  <meta charset="UTF-8">
+  <title>Pioneer Valley Citizen Science Collaboratory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+
+  <link href="../css/styles.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body>
+  <div class="jumbotron" id="top">
+    <div class="container">
+      <h1><a href="#top">Pioneer Valley<br>Citizen Science Collaboratory</a></h1>
+      <ul class="nav nav-pills">
+        <li><a href="stream" class="navbar-btn">Members</a></li>
+        <li><a href="#environment" class="navbar-btn">Environmental Issues in PV</a></li>
+        <li><a href="#projects" class="navbar-btn">Citizen Science Projects</a></li>
+        <li><a href="#about" class="navbar-btn">About PVCS</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sign Up Or Sign In -->
+  <!-- <section class="container-fluid" id="login">
+    <form role="form">
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="users">New Citizen Scientists</h2>
+        <button type="submit" class="btn btn-primary"><a href= "stream">Join PVCS</a></button>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="users">Existing Citizen Scientists</h2>
+        <div class="form-group">
+          <input type="email" class="form-control" id="inputEmail" placeholder="email address">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="inputPassword" placeholder="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </div>
+    </form>
+  </section> -->
+
+  <!-- Environmental Issues in the Pioneer Valley -->
+  <section class="container-fluid" id="environment">
+    <h2>Environmental Issues in the Pioneer Valley</h2>
+    <div class="row issues">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-2 col-sm-offset-2">
+        <a class="thumbnail" data-target="#biodiversity-icon" data-toggle="modal" href="#">
+          <img alt="Biodiversity Icon" class="img-responsive" src="/images/issue_biodiversity.png"/>
+          <h3 class="caption text-center">Biodiversity</h3>
+        </a>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-2">
+        <a class="thumbnail" data-target="#climate-change-icon" data-toggle="modal" href="#">
+          <img alt="Climate Change Icon" class="img-responsive" src="/images/issue_climatechange.png"/>
+          <h3 class="caption text-center">Climate Change</h3>
+        </a>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-2">
+        <a class="thumbnail" data-target="#invasive-species-icon" data-toggle="modal" href="#">
+          <img alt="Invasive Species Icon" class="img-responsive" src="/images/issue_invasivespecies.png"/>
+          <h3 class="caption text-center">Invasive Species</h3>
+        </a>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-2">
+        <a class="thumbnail" data-target="#habitat-loss-icon" data-toggle="modal" href="#">
+          <img alt="Habitat Loss Icon" class="img-responsive" src="/images/issue_habitatloss.png"/>
+          <h3 class="caption text-center">Habitat Loss</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <!-- Biodiversity -->
+  <div aria-hidden="true" aria-labelledby="biodiversity-icon" class="modal fade" id="biodiversity-icon" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title" id="biodiversity-title">Biodiversity</h4>
+        </div>
+        <div class="modal-body row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="thumbnail">
+              <img alt="Biodiversity Icon" src="/images/modal_biodiversity.png"/>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p>Biodiversity is the issue that ties the rest of the environmental issues listed here together. It is, broadly defined, the huge and almost incomprehensible variety of different species that inhabit the world. Biodiversity is being threatened, though, by human activity&mdash;from habitat loss, from climate change, and from introduction of invasive species. And when we lose genetic diversity in the world, we are not only losing species that don't affect us&mdash;we're losing valuable natural resources that sustain us, as well, including food sources, origins for medical drugs, and bases for jobs and livelihoods.</p>
+            <p>Click <a href="http://www.mass.gov/eea/agencies/dfg/dfw/natural-heritage/species-information-and-conservation/mesa-list/list-of-rare-species-in-massachusetts.html" target="_blank">here</a> for a list of endangered, threatened, and other special conservation interest species in Massachusetts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Climate Change -->
+  <div aria-hidden="true" aria-labelledby="climate-change-icon" class="modal fade" id="climate-change-icon" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title" id="climate-change-title">Climate Change</h4>
+        </div>
+        <div class="modal-body row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="thumbnail">
+              <img alt="Climate Change Icon" src="/images/modal_climate.png"/>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p>Climate change is a global problem, but it is already starting to have tangible and direct effects on the Pioneer Valley. Among the projected effects of climate change are more frequent severe weather events, three of which occurred in 2011 alone: a series of tornados in the Springfield area on June 1<sup>st</sup>, flooding from Tropical Storm Irene on August 28-29<sup>th</sup>, and an early snowstorm on October 30<sup>th</sup>&#46;&nbsp;A record-breaking heat wave also swept across the entire United States in July 2012.</p>
+            <p>In addition to an average temperature increase of 3-5 degrees F by 2050 at current greenhouse gas emission levels, it is expected that by the end of the century there will be anywhere from 30 to 60 days of extreme heat (over 90 degrees) in comparison with the 5 to 20 at current levels. Precipitation levels will also fluctuate much more extremely&mdash;while there are expected to be instances of extreme flooding once every 2-3 years, and a general increase in precipitation during winter months, Massachusetts will also have a 75&#37; increase in drought events which will last from 1-3 months.</p>
+            <p>All of these changes raise significant risks to other environmental factors. Temperature increases alone may force wildlife to migrate to the cooler places that they are better suited to survive, but increased flooding events may destroy habitats entirely. Flooding is particularly dangerous due to sewage disposal infrastructure  demonstrated vulnerabilities; during Tropical Storm Irene, raw sewage was discharged to the Connecticut River for several days when flood waters knocked the Greenfield wastewater facility offline.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Invasive Species -->
+  <div aria-hidden="true" aria-labelledby="invasive-species-icon" class="modal fade" id="invasive-species-icon" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title" id="invasive-title">Invasive Species</h4>
+        </div>
+        <div class="modal-body row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="thumbnail">
+              <img alt="Invasive Species Icon" src="/images/modal_invasive.png"/>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p>Invasive species represent a significant threat to local wildlife, displacing and leading to habitat loss for native flora and fauna. In extreme cases, they can even change characteristics of the ecosystem itself. Native species are usually introduced unintentionally by human activity, managing to survive in transit from their original native environment. After they establish themselves in the new environment, there is often a lag period before they begin to reproduce and spread more rapidly.</p>
+            <p>There are a wide variety of invasive species which have had an impact on the Pioneer Valley.  One of the most notorious among them, the gypsy moth, was introduced to Massachusetts in the 1860s, and since then has spread through the northeastern United States.  Gypsy moth caterpillars defoliate oaks and other hardwood trees, causing extensive damage or even killing their host trees.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Habitat Loss -->
+  <div aria-hidden="true" aria-labelledby="habitat-loss-icon" class="modal fade" id="habitat-loss-icon" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+          <h4 class="modal-title" id="habitat-loss-title">Habitat Loss</h4>
+        </div>
+        <div class="modal-body row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="thumbnail">
+              <img alt="Habitat Loss Icon" src="/images/modal_habitat.png"/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <p>Habitat loss is a major threat to biodiversity both in the Pioneer Valley and the wider world. Human activity is usually the cause of habitat loss, either directly through agriculture, land and water development, or indirectly through climate change <span class="text-danger">(link to the climate change page)</span> or introduction of invasive species <span class="text-danger">(link to the invasive species page)</span>.</p>
+            <p>The Connecticut River flows through the Pioneer Valley, and is home to a variety of aquatic species. However, human infrastructure in the form of dams and culverts has changed the natural flow regime and chemistry of the river, which has concerning implications for its ecology. There are 1,422 dams in MA and CT alone, which averages 1 dam per 6.6 km of river, in addition to 2,885 culverts in the Valley. The alterations to the rivers flow regime restrict access to quality habitat for one or more life stages of various species, such as the ability for<span title="fish which spend most of their life in seawater, but lay their eggs in freshwater">anadromous fish</span>to reach preferred freshwater spawning habitats from the sea, as well as blocking access to thermal refuges for brook trout populations. In addition, pollution and wastewater runoff from flooding and stormwaters in urban areas also contribute to making the Connecticut River unsuitable for habitation.</p>
+            <p>Urban sprawl represents another threat to habitat loss, as natural environments are replaced with man-made buildings and roads. Neighborhood Nestwatch seeks to learn more about how habitat loss in the form of increasing urban sprawl impacts bird nesting habits. To learn more, click <a href="http://pvcitizenscience.org/projects/salamander-watch/">here</a> to get involved in Neighborhood Nestwatch.</p>
+            <p>To learn more about how habitat loss affects salamanders, click <a href="http://pvcitizenscience.org/projects/salamander-watch/">here</a> to get involved in Salamander Watch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Citizen Science Projects -->
+  <section class="container-fluid" id="projects">
+    <h2>Citizen Science Projects</h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 top-buffer">
+        <div class="thumbnail">
+          <img alt="Leaves on a branch" class="img-responsive" src="/images/icon_leafdrop.png"/>
+        </div>
+        <h3>Leaf Drop</h3>
+        <p>The Leaf Drop project, adapted from an existing Forest Schoolyard Ecology Buds, Leaves, and Global Warming project, takes place in the Fall. In this multi week project Citizen Scientists record the changes in leaf color of trees to gain an understanding of the end of growing season in their local context.</p>
+        <a class="btn btn-primary" href="/leaf-drop-static.html" role="button">Learn More</a>
+        <a class="btn btn-primary" href="#" role="button">Launch App</a>
+      </div>
+      <div class="col-xs-12 col-sm-4 top-buffer">
+        <div class="thumbnail">
+          <img alt="Image of buds on a tree" class="img-responsive" src="/images/icon_budburst.png"/>
+        </div>
+        <h3>Bud Burst</h3>
+        <p>The Bud Burst project is a national citizen science project that seeks to learn more about how plants respond to changes in climate locally, regionally, and nationally. Participants report on appearances of plants, either tracking the progress of a single plant over the course of a year or once.</p>
+        <a class="btn btn-primary" href="/bud-burst-static.html" role="button">Learn More</a>
+        <a class="btn btn-primary" href="#" role="button">Launch App</a>
+      </div>
+      <div class="col-xs-12 col-sm-4 top-buffer">
+        <div class="thumbnail">
+          <img alt="Spotted salamander" class="img-responsive" src="/images/icon_salamanderwatch.png"/>
+        </div>
+        <h3>Salamander Watch</h3>
+        <p>Salamander Watch is a collaboration between Hampshire College and The Hitchcock Center for the Environment in Amherst, MA. This project involves both the “Big Night”, a counting of spotted salamanders during the early spring mating migration, and the Egg Mass Count, which is used to get a better estimate of the breeding success and overall health of the population.</p>
+        <a class="btn btn-primary" href="/salamander-watch-static.html" role="button">Learn More</a>
+        <a class="btn btn-primary" href="#" role="button">Launch App</a>
+      </div>
+    </div>
+    <div class="row top-buffer">
+      <div class="col-xs-12 col-sm-4 top-buffer">
+        <div class="thumbnail">
+          <img alt="Nest containing three eggs" class="img-responsive" src="/images/icon_nestwatch.png"/>
+        </div>
+        <h3>Neighborhood Nestwatch</h3>
+        <p>Modeled after a Smithsonian project in the Washington, D.C. area, Neighborhood Nestwatch engages citizen scientists from Western Massachusetts in gathering data to discover how urban sprawl impacts songbird populations. Assisted by scientists, participants learn how to locate nests in their backyards and count the eggs or recently-hatched birds within. In addition, the experts apply bands to adult birds so that the citizen scientists can track the birds' year-to-year returns to their nesting sites.</p>
+          <a class="btn btn-primary" href="/neighbourhood-nestwatch-static.html" role="button">Learn More</a>
+          <a class="btn btn-primary" href="#" role="button">Launch App</a>
+      </div>
+      <div class="col-xs-12 col-sm-4 top-buffer">
+        <div class="thumbnail">
+          <img alt="A firefly in a hand" class="img-responsive" src="/images/icon_firefly.png"/>
+        </div>
+        <h3>Firefly Watch</h3>
+        <p>The Boston Museum of Sciences Firefly Watch project seeks to learn more about the geographic distribution and activities of fireflies during the summer. It also seeks to discover more about the effects of man-made light and pesticides on fireflies. Participants go out into their backyards or nearby fields one night a week and fill out an observation sheet with information on the weather conditions that night and the behavior of the fireflies that they see.</p>
+        <a class="btn btn-primary" href="/firefly-watch-static.html" role="button">Learn More</a>
+        <a class="btn btn-primary" href="#" role="button">Launch App</a>
+      </div>
+      <div class="col-xs-12 col-sm-4 top-buffer">
+        <div class="thumbnail">
+          <img alt="A monarch butterfly" class="img-responsive" src="/images/icon_monarch.png"/>
+        </div>
+        <h3>Monarch Butterflies</h3>
+        <p>Monarch Butterflies Watch project engages citizen scientists in collecting data on Monarch butterflies in the Fall as they migrate to Mexico.  Future iterations of this project may involve tracking Monarch's migration from Mexico..</p>
+        <a class="btn btn-primary" href="/monarch-butterflies-static.html" role="button">Learn More</a>
+        <a class="btn btn-primary" href="#" role="button">Launch App</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About PVCS -->
+  <section class="container-fluid" id="about">
+    <h2>About Pioneer Valley Citizen Science</h2>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span></span><a data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+              What is the Pioneer Valley Citizen Science Collaboratory?
+              </a>
+            </h3>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              PVCS is a tool to help people in the Pioneer Valley who are interested in science get involved in local projects and connect with other citizen scientists.
+            </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span></span><a data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+              Where do scientists work?
+              </a>
+            </h3>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              Science is all around us. Some scientists do research while sipping lattes at their local coffee shop.
+            </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span></span><a data-toggle="collapse" data-parent="#accordion" data-target="#collapseThFour">
+              How does science affect me and my community?
+              </a>
+            </h3>
+          </div>
+          <div id="collapseThFour" class="panel-collapse collapse">
+            <div class="panel-body text-danger">
+              Fingerstache blog shabby chic occupy VHS mlkshk bitters ennui. Pop-up Williamsburg wolf, 90 s Cosby sweater fashion axe paleo bitters Tumblr jean shorts normcore salvia beard Odd Future fingerstache. Kogi Tonx put a bird on it, letterpress sriracha YOLO church-key Pinterest +1 8-bit iPhone.
+            </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span></span><a data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour">
+              Who can be involved in scientific research?
+              </a>
+            </h3>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+              To be involved in scientific research you dont need a long white lab coat, giant microscopes, or a PHD in chemistry. In fact, you may not even need to leave your yard. Anyone can be involved in scientific research through citizen science.
+            </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span></span><a data-toggle="collapse" data-parent="#accordion" data-target="#collapseFive">
+              What is citizen science?
+              </a>
+            </h3>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body text-danger">
+              Citizen Science occurs when regular citizens get involved in science.
+            </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span></span><a data-toggle="collapse" data-parent="#accordion" data-target="#collapseSix">
+              How can I get involved?
+              </a>
+            </h3>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse">
+            <div class="panel-body">
+              JOIN PVCS today!<a class="join-now" href="#login">Join Now</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Team -->
+  <section class="container-fluid" id="about-team">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <span></span><a data-toggle="collapse" data-parent="#accordion" data-target="#collapseSeven">
+            Who are the organizing members of the PVCS team?
+            </a>
+          </h3>
+        </div>
+        <div id="collapseSeven" class="panel-collapse collapse">
+          <div class="panel-body">
+            <h3>Hampshire College Team</h3>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img alt="Profile shot of Tim Zimmerman" class="img-circle img-responsive" src="/images/people/tim-profile.png"/>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h4>Tim Zimmerman</h4>
+                <p>Tim Zimmerman is a Visiting Assistant Professor of Cognition and Education in the School of Cognitive Sciences at <a href="https://www.hampshire.edu/" target="_blank">Hampshire College</a>. As a learning sciences researcher, he focuses on the learning of ocean and environmental science concepts and the design of learning tools that enhance such learning.  He studies science learning across formal (classroom) and <a href="http://informalscience.org/" target="_blank">informal</a> (outdoor, aquarium, museums, field trips, etc.) contexts, the use of science knowledge for environmental decision-making.  His work often involves the design and use of Internet-connected, wired and mobile devices as learning tools.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img alt="Profile shot of Jonathan Gardner" class="img-circle img-responsive" src="/images/people/placeholder_male_superhero.png"/>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h4>Jonathan Gardner</h4>
+                <p>Jonathan Gardner is a student at Hampshire College studying the ways in which digital technologies have changed and will continue to change how people learn and think about learning.  His specific interests include leveraging games and game design for learning purposes, the Internet’s potential for promoting scientific literacy, and the effects of a digital media saturated world on cognition.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img alt="Profile shot of Chelsea LaValley" class="img-circle img-responsive" src="/images/people/placeholder_female_superhero.png"/>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h4>Chelsea LaValley</h4>
+                <p>Chelsea LaValley is a Hampshire College student studying education, psychology and emotion studies. She specifically is interested in social-emotional learning in education. Her concentration involves finding a correlation between SEL and academic achievement; to promote mental health services in the United States public education system. She is originally from Taos, New Mexico and will graduate from Hampshire in the spring of 2015!</p>
+              </div>
+            </div>
+            <h3>University of Toronto Team</h3>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                    <img alt="Profile shot of Jim Slotta" class="img-circle img-responsive" src="/images/people/jim-slotta-profile.jpg"/>
+                </div>
+              </div>
+                <div class="col-md-10">
+                <h4>Jim Slotta</h4>
+                <p>Jim Slotta is an associate professor of education in the Ontario Institute for Studies in Education (OISE) at The University of Toronto, where he holds the Canada Research Chair in Education and Technology.  In 2006, he established the ENCORE lab, a team of talented students, designers and developers who investigate collaborative inquiry learning in formal (K-12) and informal (home, field and museum) settings. In collaboration with researchers from Oslo, Chicago and Berkeley, Slotta and his team have developed the Scalable Architecture for Interactive Learning (SAIL), as well as a framework for smart classroom research called SAIL Smart Space.  Recent funded projects have examined the use of embedded phenomena in elementary classrooms, distributed and ubiquitous learning in high school physics, and an immersive rainforest simulation for high school biology.  Together, these projects have advanced a theoretical model known as Knowledge Community and Inquiry (KCI).  Professor Slotta and his team have published their work widely, as seen in the publications section of this site.  Taken together, this work examines how K-12 students can become a knowledge community, supported by technology, that enables inclusive participation and promotes the growth of ideas.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img alt="Profile shot of Alisa Acosta" class="img-circle img-responsive" src="/images/people/alisa-acosta-profile.jpg"/>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h4>Alisa Acosta</h4>
+                <p>Alisa Acosta is a PhD student with the Encore Lab, bringing her experiences as an environmental scientist/field researcher, secondary science educator, and graphics designer to this project.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img alt="Profile shot of Hedieh Najafi" class="img-circle img-responsive" src="/images/people/hedieh-profile.png"/>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h4>Hedieh Najafi</h4>
+                <p>Hedieh Najafi is a researcher at the Encore lab and contributes to conceptualizing an integrated research component of the PVCS Collaboratory.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img alt="Profile shot of Mike Tissenbaum" class="img-circle img-responsive" src="/images/people/mike-tissenbaum.jpg"/>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h4>Mike Tissembaum</h4>
+                <p>Mike Tissenbaum is a PhD candidate in Curriculum Teaching and Learning (CTL) department at the Ontario Institute for Studies in Education (OISE)/The University of Toronto. Mike received my Master’s from the Faculty of Information (iSchool) at the University of Toronto and am also a graduate of their Knowledge Media Design Institute collaborative program.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img alt="Profile shot of Thomas Berry" class="img-circle img-responsive" src="/images/people/thomas-berry-profile.jpg"/>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h4>Thomas Berry</h4>
+                <p>Thomas Berry is a web developer currently working at Encore Lab at the University of Toronto. He works on a variety of projects for researchers using many different tools, libraries and frameworks (node, backbone, jquery, underscore, ruby-on-rails, css3/sass, etc). I primarily write code, but increasingly he is gaining experience with project management and product design.</p>
+                <p>Thomas holds a bachelors of arts in History and Geography from Brock University and a Master of Information Science from the University of Toronto. in 2013 graduated from Bitmaker Labs web development bootcamp and HackerYou s response web development course in 2013</p>
+              </div>
+            </div>
+            <h3>University of Colorado, Denver Team</h3>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img alt="Profile shot of Tam Vu" class="img-circle img-responsive" src="/images/people/tam-profile.png"/>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h4>Tam Vu</h4>
+                <p>Dr. Tam Vu is an Assistant Professor of Computer Science at the University of Colorado, Denver where his teaching and research focus on the design and use of networked mobile technology.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="thumbnail">
+                  <img alt="Profile shot of Phuc Nguyen" class="img-circle img-responsive" src="/images/people/phuc-nguyen.jpg"/>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h4>Phuc Nguyen</h4>
+                <p>Phuc Nguyen is a Ph.D. student in the Department of Computer Science, University of Colorado, Denver. His research interests include wired/wireless networking and mobile computing.</p>
+              </div>
+            </div>
+            <h3>Our Partners</h3>
+            <div class="col-md-12">
+              <ul class="list-unstyled">
+                <li><h4><a href="http://www.hitchcockcenter.org/">Hitchcock Center for the Environment</a></h4></li>
+                <li><h4><a href="https://sites.google.com/site/susannahlerman/">Dr. Susannah Lerman,</a><span>&nbsp;&nbsp;UMass Amherst/Neighbourhood Nestwatch Project</span></h4></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <img class="nsf-logo pull-left" src="images/nsf1.jpg" alt="NSF Logo">
+    <p class="pull-left col-xs-8 col-sm-6">This project is supported by a grant from the National Science Foundation</p>
+    <a class="btn btn-primary btn-top pull-right" href="#top"><span></span>Return To Top</a>
+  </footer>
+</body>
+</html>
+
+<!-- col-xs-2 col-sm-6 -->

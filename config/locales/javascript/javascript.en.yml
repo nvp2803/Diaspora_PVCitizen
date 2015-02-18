@@ -50,7 +50,7 @@ en:
       error_remove: "Couldn't remove <%= name %> from the aspect :("
 
     my_activity: "My Activity"
-    my_stream: "Stream"
+    my_stream: "New Feed"
     my_aspects: "My Aspects"
 
     videos:
@@ -176,7 +176,7 @@ en:
         other: "Show <%= count %> more comments"
 
       followed_tag:
-        title: "#Followed Tags"
+        title: "#Followed Projects"
         contacts_title: "People who dig these tags"
         add_a_tag: "Add a tag"
         follow: "Follow"

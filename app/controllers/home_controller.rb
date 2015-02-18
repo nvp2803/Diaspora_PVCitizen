@@ -19,9 +19,13 @@ class HomeController < ApplicationController
       render :show
     else
       @css_framework = :bootstrap # Hack, port site to one framework
+      # render 'layout/application'
       render file: Rails.root.join("public", "default2.html"),
              layout: 'application'
     end
+  end
+  def homepage
+    
   end
 
   def toggle_mobile

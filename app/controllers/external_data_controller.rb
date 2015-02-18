@@ -68,8 +68,6 @@ class ExternalDataController < ApplicationController
 	end
 
   def homepage
-    render file: Rails.root.join("public", "index.html"),
-             layout: 'application'
   end
 
   def stream

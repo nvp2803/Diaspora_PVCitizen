@@ -1,7 +1,3 @@
--#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
--#   licensed under the Affero General Public License version 3 or later.  See
--#   the COPYRIGHT file.
-
 - content_for :page_title do
   - if @stream.tag_name
     = @stream.display_tag_name
@@ -16,7 +12,7 @@
 
       .side_stream.stream
         = render :partial => 'people/index', :locals => {:people => @stream.tagged_people}
-
+        
     .span7
       .stream_container
         #author_info
@@ -25,13 +21,26 @@
 
         - if current_user
           = render 'publisher/publisher', :selected_aspects => @stream.aspect_ids, :aspect_ids => @stream.aspect_ids, :aspect => @stream.aspect
+          
 
         %hr
-
         #main_stream.stream
 
         #paginate
           %span.loader.hidden
 
+        / %iframe{:frameborder => "0", :align => "middle", :height => "800", :src => 'tosalamander', :width => "100%"}
+
+
       %a{:id=>"back-to-top", :title=>"#{t('layouts.application.back_to_top')}", :href=>"#"}
         &#8679;
+  - if @stream.tag_name == "salamander"       
+    %iframe{:frameborder => "0", :align => "middle", :height => "1400", :src => 'tosalamander', :width => "100%"}
+    
+    / .span7
+    /   .stream_container
+    /     - if current_user
+
+
+/ .container-fluid
+/   = render 'tags/salamander'
