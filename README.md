@@ -34,7 +34,7 @@ DB=postgres  bundle install
 bundle exec rake db:create db:schema:load
 
 9 - Run diaspora:
-./script/server
+./script/server or rails s
 
 **Your server now is running in localhost:3000. You can change the port easily.
 
