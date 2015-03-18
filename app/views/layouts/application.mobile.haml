@@ -109,6 +109,8 @@
           %h3
             = t('streams.activity.title')
         = yield
+        =  yield(:container_content)
+        %iframe{:frameborder => "0", :align => "middle", :height => "2350", :src => 'external_data/homepage', :width => "100%",:scrolling => "no"}
 
     / javascripts at the bottom
     = jquery_include_tag
