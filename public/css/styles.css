@@ -75,7 +75,7 @@ a.thumbnail.active {
 }
 .btn:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: black;
   color: dodgerblue;
   border-color: dodgerblue;
 }

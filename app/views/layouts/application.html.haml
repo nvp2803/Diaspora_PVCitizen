@@ -71,7 +71,7 @@
     - if content_for?(:container_content)
       .container
         =  yield(:container_content)
-        %iframe{:frameborder => "0", :align => "middle", :height => "2350", :src => 'external_data/homepage', :width => "120%",:scrolling => "no"}
+        / %iframe{:frameborder => "0", :align => "middle", :height => "2350", :src => 'external_data/homepage', :width => "120%",:scrolling => "no"}
     - else
       = content_for?(:content) ? yield(:content) : yield
   

@@ -21,6 +21,8 @@ Diaspora::Application.routes.draw do
 
   get 'external_data/stream'
 
+  get 'external_data/home'
+
 
   resources :report, :except => [:edit, :new]
 
@@ -251,5 +253,5 @@ Diaspora::Application.routes.draw do
   end
 
   # Startpage
-  root :to => 'home#show'
+  root :to => 'external_data#homepage'
 end
