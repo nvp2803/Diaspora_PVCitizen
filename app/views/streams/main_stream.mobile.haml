@@ -11,3 +11,5 @@
 #main_stream.stream
   = render 'shared/stream', :posts => @stream.stream_posts
   = render 'shared/stream_more_button'
+%li
+  = link_to "PVCitizen Homepage", external_data_homepage_path
