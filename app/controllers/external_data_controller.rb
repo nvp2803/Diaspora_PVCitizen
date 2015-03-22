@@ -5,7 +5,7 @@ require 'net/https'
 require 'uri'
 
 class ExternalDataController < ApplicationController
-  http_basic_authenticate_with name: "test123", password: "test123"
+  # http_basic_authenticate_with name: "test123", password: "test123"
 	respond_to 	:json, :html, :jpg, :xml
 	# $uri= URI.parse('https://drowsy.badger.encorelab.org/hampshire-apps/leaf_drop_observations')
   $uri = URI.parse("http://headers.jsontest.com/")
